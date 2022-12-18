@@ -1,0 +1,34 @@
+.listInput{
+
+}
+.input-floating{
+    position: relative;
+}
+.custom-input{
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.custom-input:focus{
+    outline: none;
+    border-bottom: 1px solid;
+    border-image: linear-gradient(136.66deg, #926936 -9.13%, #FFDA9A 92.54%)1 !important;
+}
+.support-floating-lables{
+    display: block;
+    z-index: 1;
+}
+.floating-lables {
+   
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #615F5C;
+    font-size: 16px;
+    transition: 0.3s all;
+}
+.support-floating-lables:focus ~ .floating-lables,
+.support-floating-lables:valid ~ .floating-lables{
+    top: -18px;
+    font-size: 12px;
+}
