@@ -1,26 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./button.css">
-    <link rel="stylesheet" href="./input.css">
-</head>
-<body>
-    <h2>List Bottons</h2>
-    <div class="listBT">
-          <button class="btn">Nguyen Hoang Tai</button>
-          <button class="btn-underLine"><span class="support-underLine">Nguyen Hoang Tai</span></button>
-          <button class="btn-background-gradient">Nguyen Hoang Tai</button>
-    </div>
-    <h2>List input</h2>
-    <div class="listInput">
-        <div class="input-floating">
-            <input type="text" class="support-floating-lables custom-input" required>
-            <span class="floating-lables">Enter...</span>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="container">
+	<div class="row">
+        <div class="well" style="width:300px; padding: 8px 0;">
+            <div style="overflow-y: scroll; overflow-x: hidden; height: 500px;">
+                <ul class="nav nav-list">
+                    <li><label class="tree-toggler nav-header">Header 1</label>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><label class="tree-toggler nav-header">Header 1.1</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><label class="tree-toggler nav-header">Header 1.1.1</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="divider"></li>
+                    <li><label class="tree-toggler nav-header">Header 2</label>
+                        <ul class="nav nav-list tree">
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><label class="tree-toggler nav-header">Header 2.1</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><label class="tree-toggler nav-header">Header 2.1.1</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><label class="tree-toggler nav-header">Header 2.2</label>
+                                <ul class="nav nav-list tree">
+                                    <li><a href="#">Link</a></li>
+                                    <li><a href="#">Link</a></li>
+                                    <li><label class="tree-toggler nav-header">Header 2.2.1</label>
+                                        <ul class="nav nav-list tree">
+                                            <li><a href="#">Link</a></li>
+                                            <li><a href="#">Link</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+	</div>
+</div>
+<script>
+  $(document).ready(function () {
+    $('label.tree-toggler').click(function () {
+        $(this).parent().children('ul.tree').toggle(300);
+    });
+});
+</script>

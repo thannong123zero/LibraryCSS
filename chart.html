@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200" user-scalable="0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="description"
+        content="Bảng giá Lightning, Bảng giá chứng khoán trực tuyến VNDirect, sàn cổ phiếu, cập nhật bảng giá HOSE, HNX, UPCOM. Giao dịch thoả thuận HOSE, HNX. Thông tin thị trường.">
+    <meta name="google-site-verification" content="DAdaaCvEmgY8bSy-qDGXLZr4UyDiQ9r5gYbg5Hp9HSI" />
+    <meta property="og:type" content="website" />
+    <style>
+        body {
+            background-color: #202127;
+            color: rgba(255, 255, 255, .9)
+        }
+
+        #page-loader-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh
+        }
+
+        .spinner {
+            width: 70px;
+            text-align: center
+        }
+
+        .spinner>div {
+            width: 18px;
+            height: 18px;
+            background-color: #fff;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both
+        }
+
+        .spinner .bounce1 {
+            -webkit-animation-delay: -.32s;
+            animation-delay: -.32s
+        }
+
+        .spinner .bounce2 {
+            -webkit-animation-delay: -.16s;
+            animation-delay: -.16s
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+
+            0%,
+            100%,
+            80% {
+                -webkit-transform: scale(0)
+            }
+
+            40% {
+                -webkit-transform: scale(1)
+            }
+        }
+
+        @keyframes sk-bouncedelay {
+
+            0%,
+            100%,
+            80% {
+                -webkit-transform: scale(0);
+                transform: scale(0)
+            }
+
+            40% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+    <link href="./app.35c7c6fc90.css" rel="stylesheet">
+</head>
+
+    <body class="vndirect-banggia">
+    <div id="root">
+        <div id="page-loader-wrapper">
+            <div class="spinner">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div><noscript>Your browser does not support JavaScript!</noscript>
+    <script type="text/javascript" src="./vendor.524e1f2856.js" defer="true"></script>
+    <script type="text/javascript" src="./app.312d20d3fb.js" defer="true"></script>
+    <script type="text/javascript" src="./chart.js" defer="true"></script>
+</body>
+
+</html>
